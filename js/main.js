@@ -79,7 +79,7 @@ initMap = () => {
       });
       L.tileLayer(
               'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
-                  mapboxToken: 'pk.eyJ1Ijoicm9ib3Ryb3MiLCJhIjoiY2prbmZlMHkxMHg0MjN4dGhjcTYyandjMCJ9.apvqNMFJVQu6xrhOp9S31g',
+                  mapboxToken: 'pk.eyJ1IjoibWF5YW5ramgiLCJhIjoiY2pubHZtdXI5MGd1cTN3b2h4dzlseXA5eiJ9.-2Z7f5gvhkRPpX0EIraL5w',
                   maxZoom: 18,
                   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
                       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -89,7 +89,7 @@ initMap = () => {
 
   updateRestaurants();
 }
-/* window.initMap = () => {
+ window.initMap = () => {
   let loc = {
     lat: 40.722216,
     lng: -73.987501
@@ -100,7 +100,7 @@ initMap = () => {
     scrollwheel: false
   });
   updateRestaurants();
-} */
+}
 
 /**
  * Update page and map for current restaurants.
