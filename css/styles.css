@@ -18,7 +18,7 @@ ul, li {
 	color: #333;
 }
 a {
-	color: orange;
+	color: #1de9b6 ;
 	text-decoration: none;
 }
 a:hover, a:focus {
@@ -170,7 +170,7 @@ nav h1 a {
   font-size: 11pt;
 }
 #restaurants-list li a {
-  background-color: orange;
+  background-color: #1de9b6 ;
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;

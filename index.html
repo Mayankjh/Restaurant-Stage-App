@@ -18,19 +18,6 @@
     <meta content="Restaurant reviews webapp." name="description" />
     <meta content="Udacity, tous droits réservés © 2018" name="copyright" />
     <meta content="noindex,nofollow" name="robots" />
-    <link href="assets/img/icons/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" />
-    <link href="assets/img/icons/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60" />
-    <link href="assets/img/icons/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
-    <link href="assets/img/icons/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
-    <link href="assets/img/icons/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
-    <link href="assets/img/icons/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
-    <link href="assets/img/icons/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" />
-    <link href="assets/img/icons/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
-    <link href="assets/img/icons/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
-    <link href="assets/img/icons/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png" />
-    <link href="assets/img/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
-    <link href="assets/img/icons/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png" />
-    <link href="assets/img/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
     <link href="./manifest.json" rel="manifest" />
     <meta content="#ffffff" name="msapplication-TileColor" />
     <meta content="img/icons/ms-icon-144x144.png" name="msapplication-TileImage" />
@@ -61,19 +48,19 @@
             <div aria-hidden="true" role="application" id="map">
             </div>
         </section>
-        <section class="restaurants-container">
-            <div class="filter-options" id="filters">
-                <button class="c-btn btn-default open-search-modal js-filters-modal" href="#" title="Open the search">
-                    Search
-                </button>
-            </div>
-            <ul id="restaurants-list">
-            </ul>
-            <p class="no-restaurant-msg">
-                No restaurant found for your search.
-            </p>
-        </section>
     </main>
+    <section class="restaurants-container">
+        <div class="filter-options" id="filters">
+            <button class="c-btn btn-default open-search-modal js-filters-modal" href="#" title="Open the search">
+                Search
+            </button>
+        </div>
+        <ul id="restaurants-list">
+        </ul>
+        <p class="no-restaurant-msg">
+            Sorry!! :-( No restaurant found for your search.
+        </p>
+    </section>
     <footer id="footer">
         Copyright (c) 2018
         <a href="/" class="jsHomeLink" title="View Home page">
@@ -85,18 +72,18 @@
     </footer>
     <div class="c-modal js-filters-modal" id="filters-modal" role="dialog">
         <h2>
-            You can filter the restaurant list using the dropdowns below
+            Apply Your Filters
         </h2>
         <label for="neighborhoods-select">
             Select a neighborhood value:
         </label>
         <select id="neighborhoods-select" name="neighborhoods">
             <option value="all">
-                All Neighborhoods
+                All Resturants
             </option>
         </select>
         <label for="cuisines-select">
-            Select a cuisine value:
+            Select a cuisine:
         </label>
         <select id="cuisines-select" name="cuisines">
             <option value="all">
@@ -104,7 +91,7 @@
             </option>
         </select>
         <button class="c-btn btn-default js-apply-filters" href="#" title="Apply selected filters to display the list of restaurants">
-            Apply selected filters
+            Filters
         </button>
         <button class="c-btn btn-default js-close-modal" title="Close search modal">
             Close Search
