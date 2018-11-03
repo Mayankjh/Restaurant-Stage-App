@@ -1,5 +1,5 @@
 const GOOGLE_MAPS_API_KEY = "AIzaSyBXysE433qRY0W9gup0-_N5UF_0ObJK3oc";
-let appAlias = "";
+let appAlias = "Restaurant-Stage-App";
 if (location.port === "8000") {
   appAlias = "Restaurant-Stage-App";
 }
