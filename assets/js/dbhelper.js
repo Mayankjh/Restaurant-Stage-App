@@ -10,7 +10,7 @@ class DBHelper {
     const sslActive = location.protocol.indexOf("https") !== -1;
     const jsonUrl = sslActive
       ? `${location.origin}:443/data/restaurants.json`
-      : `${location.origin}/data/restaurants.json`;
+      : `${location.origin}data/restaurants.json`;
     console.log(jsonUrl);
     return jsonUrl;
   }
